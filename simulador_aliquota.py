@@ -2,14 +2,14 @@
 import streamlit as st
 import pandas as pd
 
-st.title("📊 Simulador de Alíquota Efetiva - Simples Nacional (Anexo III)")
+st.title("📊 Simulador de Alíquota Efetiva CONTFLOW - Simples Nacional (Anexo III)")
 
 st.markdown("Simule a alíquota efetiva do Simples Nacional (Anexo III) para os próximos 12 meses.")
 
 # Entradas do usuário
 receita_bruta_inicial = st.number_input("Receita bruta acumulada dos últimos 12 meses (até o mês atual)", value=0.0, step=100.0, format="%.2f")
 faturamento_mes_atual = st.number_input("Faturamento do mês atual", value=0.0, step=100.0, format="%.2f")
-faturamento_projetado = st.number_input("Faturamento projetado mensal (para os próximos meses)", value=0.0, step=100.0, format="%.2f")
+faturamento_projetado = st.number_input("Faturamento projetado - média mensal (para os próximos meses)", value=0.0, step=100.0, format="%.2f")
 
 if receita_bruta_inicial > 0 and faturamento_mes_atual > 0:
     def faixa_simples(rbt12):
