@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 
-st.title("📊 Simulador de Alíquota Efetiva - Simples Nacional (Anexo III)")
+st.title("📊 Simulador CONTFLOW de Alíquota Efetiva - Simples Nacional (Anexo III)")
 
 st.markdown("Preencha a receita bruta acumulada e o faturamento mensal atual. Você pode usar um valor único de projeção ou informar mês a mês.")
 
